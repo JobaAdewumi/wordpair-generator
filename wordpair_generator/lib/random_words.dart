@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:english_words/english_words.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 
 class RandomWords extends StatefulWidget {
   @override
@@ -11,6 +12,7 @@ class _RandomWordsState extends State<RandomWords> {
   final _randomWordPairs = <WordPair>[];
   final _savedWordPairs = Set<WordPair>();
 
+  // final prefs = await SharedPreferences.getInstance();
 
   Widget _buildList(_randomWordPairs) {
     return ListView.builder(
